@@ -53,6 +53,17 @@
   .tag.local{background:rgba(111,115,99,.14);color:var(--muted);}
   .tag.internal{background:rgba(49,54,36,.10);color:var(--olive);}
 
+  .section-title{margin:52px 0 18px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .section-title h2{margin:0;font-family:"Playfair Display",serif;font-style:italic;font-weight:800;font-size:26px;color:var(--olive);}
+  .section-title .c{font-size:12.5px;color:var(--muted);font-weight:600;}
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:14px;}
+  .skill-cat{background:var(--card);border-radius:16px;padding:18px;box-shadow:var(--shadow-soft);border:1px solid rgba(49,54,36,.06);}
+  .skill-cat h3{margin:0 0 13px;font-family:"Space Grotesk",sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);display:flex;justify-content:space-between;align-items:center;}
+  .skill-cat h3 .n{color:var(--muted);font-weight:600;}
+  .skill-cat ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  .skill-cat li{font-size:13px;color:var(--olive);line-height:1.3;padding-left:15px;position:relative;}
+  .skill-cat li::before{content:"";position:absolute;left:0;top:6px;width:5px;height:5px;border-radius:50%;background:var(--gold);}
+
   footer{margin-top:44px;text-align:center;font-size:12px;color:var(--muted);}
   footer a{color:var(--teal);}
 </style>
@@ -211,6 +222,104 @@
       <div class="name">Internal Bridge</div>
       <div class="purpose">Links the two agents to each other.</div>
       <div class="tags"><span class="tag internal">Internal</span></div>
+    </div>
+
+  </div>
+
+  <div class="section-title">
+    <h2>Skills Library</h2><span class="c">42 skills · 8 categories</span>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-cat">
+      <h3>Real Estate <span class="n">7</span></h3>
+      <ul>
+        <li>Deal of the Week</li>
+        <li>Lease listing workflow</li>
+        <li>CRM pipeline sync</li>
+        <li>Incoming leads tracker</li>
+        <li>Property alert tagging</li>
+        <li>Tenant screening</li>
+        <li>Stay-in-touch letters</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>Email &amp; Inbox <span class="n">5</span></h3>
+      <ul>
+        <li>Inbox triage</li>
+        <li>Team email responder</li>
+        <li>Writing desk</li>
+        <li>Meeting-response drafts</li>
+        <li>Formal client responses</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>Content &amp; Marketing <span class="n">7</span></h3>
+      <ul>
+        <li>Campaign emails</li>
+        <li>Funnel articles</li>
+        <li>Content repurposing</li>
+        <li>Deck builder</li>
+        <li>YouTube scripts</li>
+        <li>Sales one-pagers</li>
+        <li>Build-kit packager</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>Sales &amp; Strategy <span class="n">5</span></h3>
+      <ul>
+        <li>Pitch-close guardian</li>
+        <li>Data room architect</li>
+        <li>Decision accelerator</li>
+        <li>Voice pattern library</li>
+        <li>Writing-pattern capture</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>Finance &amp; Ops <span class="n">3</span></h3>
+      <ul>
+        <li>Monthly P&amp;L builder</li>
+        <li>Bank account sync</li>
+        <li>Meeting-to-tasks</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>Knowledge &amp; Media <span class="n">4</span></h3>
+      <ul>
+        <li>Video transcript capture</li>
+        <li>Playlist watchers</li>
+        <li>Wiki ingest</li>
+        <li>Wiki lint</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>System &amp; Infrastructure <span class="n">4</span></h3>
+      <ul>
+        <li>Agent bridge</li>
+        <li>Config-drift audit</li>
+        <li>Daily dashboard</li>
+        <li>Rules mirror sync</li>
+      </ul>
+    </div>
+
+    <div class="skill-cat">
+      <h3>Personal <span class="n">7</span></h3>
+      <ul>
+        <li>Pickleball video coach</li>
+        <li>Pickleball film review</li>
+        <li>Tournament monitor</li>
+        <li>Balance coach</li>
+        <li>Daily planner</li>
+        <li>Bookmark search</li>
+        <li>Learning watchers</li>
+      </ul>
     </div>
 
   </div>
